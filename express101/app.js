@@ -18,6 +18,7 @@ app.post('/', (req, res) => {
     res.status(201).json(produtos);
 })
 
+//PUT para modificar um desses produtos.
 app.put('/:id', (req, res) => {
     const id = Number(req.params.id);
     const content = req.body;
